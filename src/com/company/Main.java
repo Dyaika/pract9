@@ -33,6 +33,6 @@ public class Main {
     }
 
     public static void main(String[] args) throws IncorrectINNException, StudentNotFoundException {
-        TestStudent.test();
+        new App();
     }
 }

@@ -20,7 +20,7 @@ public class TestStudent {
         System.out.println(getByName(str, iDNumber));
 
     }
-    private static void sort(Comparable[] array){
+    public static void sort(Comparable[] array){
         int n = array.length;
         Comparable cur = array[0];
         for (int i = 1; i < n; i++){
@@ -33,7 +33,7 @@ public class TestStudent {
             array[j+1] = cur;
         }
     }
-    private static Student getByName(String name, Student[] students) throws StudentNotFoundException {
+    public static Student getByName(String name, Student[] students) throws StudentNotFoundException {
         for (Student s: students
              ) {
             if (Objects.equals(s.getName(), name)){
